@@ -20,7 +20,7 @@ aws_secret_access_key = os.environ["aws_secret_access_key"]
 # S3 bucket and file details
 s3_bucket_name = "data-eng-228-final-project"
 s3_file_key = "Academy/Business_20_2019-02-11.csv"
-local_file_path = "/Users/miguel/desktop/coding/sparta/SpartaGlobalETLPipeline/new_file.csv"
+local_file_path = "your_directory/file_name"
 
 
 # Download file from S3
