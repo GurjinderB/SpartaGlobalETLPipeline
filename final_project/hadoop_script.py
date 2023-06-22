@@ -24,7 +24,7 @@ hadoop_file_path = "~/test/test.csv"
 ssh_client = paramiko.SSHClient()
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 private_key = paramiko.RSAKey.from_private_key_file(hadoop_private_key)
-ssh_client.connect(hadoop_host, pkey=private_key)
+ssh_client.connect(hadoop_host, username=hadoop_username, pkey=private_key)
 
 # Download file from S3
 s3_client = boto3.client("s3", aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
