@@ -1,7 +1,7 @@
 import boto3
 
 
-# adds a set of files of the same format to its associated dictionary
+# extracts a set of files of the same format to its associated dictionary key
 def extract_file_type(s3, prefix: str, files_dict: dict, file_type: str = None):
     bucket = 'data-eng-228-final-project'
     data = s3.list_objects_v2(Bucket=bucket, Prefix=prefix)
@@ -31,25 +31,19 @@ def extract_file_type(s3, prefix: str, files_dict: dict, file_type: str = None):
                     files_dict[file_type].append(obj)
 
 
-# adds the corresponding files to the dictionary for all files
-def extract_all_files(s3, files_dict: dict) -> dict:
+# calls all the functions to extract each file type from the two folders 'Academy' and 'Talent'
+def extract_all_files(s3, files_dict: dict):
     extract_file_type(s3, 'Academy', files_dict)
-    # extract_file_type(s3, 'Talent', files_dict, 'json')
+    extract_file_type(s3, 'Talent', files_dict, 'json')
     extract_file_type(s3, 'Talent', files_dict, 'csv')
     extract_file_type(s3, 'Talent', files_dict, 'txt')
-    return files_dict
 
 
-def main():
+# extracts all files from amazon s3, returning a dictionary of files of the same folder and format under the same key
+def extract() -> dict:
     s3_client = boto3.client('s3')
     files_dict = {'academy_csv': [], 'json': [], 'txt': [], 'csv': []}
 
     extract_all_files(s3_client, files_dict)
 
-    print(len(files_dict['academy_csv']))
-    print(len(files_dict['json']))
-    print(len(files_dict['txt']))
-    print(len(files_dict['csv']))
-
-
-main()
+    return files_dict
