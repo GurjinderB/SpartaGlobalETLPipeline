@@ -2,7 +2,7 @@ import boto3
 
 
 # extracts a set of files of the same format to its associated dictionary key
-def extract_file_type(s3, prefix: str, files_dict: dict, file_type: str = None):    
+def extract_file_type(s3, prefix: str, files_dict: dict, file_type: str = None):
     bucket = 'data-eng-228-final-project'
     data = s3.list_objects_v2(Bucket=bucket, Prefix=prefix)
     content = data['Contents']
@@ -22,9 +22,8 @@ def extract_file_type(s3, prefix: str, files_dict: dict, file_type: str = None):
 
         for page in pages:
             content = page['Contents']
-            
-            # changed 'range(0, len(content)' to 'range(0, 5)' to grab only five first elements
-            for i in range(0, 5):
+
+            for i in range(0, len(content)):
                 file_name = content[i]['Key']
 
                 if file_name.endswith(file_type):

@@ -90,17 +90,14 @@ def convert_all_to_df(file_objects: list, file_type: str):
 
 
 s3_client = boto3.client('s3')
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Academy/Data_28_2019-02-18.csv') # Gurjinder
-# print(convert_to_df(obj, 'csv'))
+obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Academy/Data_28_2019-02-18.csv')
+print(convert_to_df(obj, 'csv'))
 
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/10383.json') # Michail
-# print(convert_to_df(obj, 'json'))
+obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/10383.json')
+print(convert_to_df(obj, 'json'))
 
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/April2019Applicants.csv') # Mankabir
-# print(convert_to_df(obj, 'csv'))
+obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/April2019Applicants.csv')
+print(convert_to_df(obj, 'csv'))
 
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/Sparta Day 1 August 2019.txt') # Fuad
-# print(convert_to_df(obj, 'txt'))
-
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Prefix='Talent/')
-print(convert_all_to_df(obj, 'csv'))
+obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/Sparta Day 1 August 2019.txt')
+print(convert_to_df(obj, 'txt'))
