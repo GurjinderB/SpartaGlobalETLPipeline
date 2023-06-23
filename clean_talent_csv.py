@@ -24,11 +24,14 @@ def clean_csv(df):
     df_cleaned['invite_date'] = df_cleaned['invite_date'].apply(convert_to_date)
 
     # Replace degree results
-    replacements = {'1st': '1', '3rd': '3'}
+    replacements = {'1st': 1.0, '2:1': 2.1, '2:2': 2.2, '3rd': 3.0}
     df_cleaned['degree'] = df_cleaned['degree'].replace(replacements)
 
     # Format phone numbers
     df_cleaned['phone_number'] = df_cleaned['phone_number'].str.replace(r'\D', '', regex=True)
+
+    # Convert invited_by to uppercase
+    df_cleaned['invited_by'] = df_cleaned['invited_by'].str.upper()
 
     return df_cleaned
 
