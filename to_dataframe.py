@@ -89,15 +89,13 @@ def convert_all_to_df(file_objects: list, file_type: str):
     return df
 
 
-s3_client = boto3.client('s3')
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Academy/Data_28_2019-02-18.csv')
-print(convert_to_df(obj, 'csv'))
+# converts a dict of file objects into a dict of aggregated pandas dataframes of the same file type and folder
+def convert(files_dict: dict) -> dict:
+    academy_csv_df = convert_all_to_df(files_dict["academy_csv"], 'csv')
+    talent_json_df = convert_all_to_df(files_dict["json"], 'json')
+    talent_txt_df = convert_all_to_df(files_dict["txt"], 'txt')
+    talent_csv_df = convert_all_to_df(files_dict["csv"], 'csv')
+    dataframes = {"academy_csv": academy_csv_df, "json": talent_json_df, "txt": talent_txt_df, "csv": talent_csv_df}
+    return dataframes
 
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/10383.json')
-print(convert_to_df(obj, 'json'))
 
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/April2019Applicants.csv')
-print(convert_to_df(obj, 'csv'))
-
-obj = s3_client.get_object(Bucket='data-eng-228-final-project', Key='Talent/Sparta Day 1 August 2019.txt')
-print(convert_to_df(obj, 'txt'))

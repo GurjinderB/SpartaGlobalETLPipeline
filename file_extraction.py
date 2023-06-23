@@ -47,3 +47,4 @@ def extract() -> dict:
     extract_all_files(s3_client, files_dict)
 
     return files_dict
+
