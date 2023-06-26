@@ -62,11 +62,39 @@ def json_to_pd(obj):
     return df
 
 
+def academy_csv_to_pd(obj, file_name: str):
+    df = pd.DataFrame()
+
+    key = file_name
+    date_file = key.split(".")[0]
+    date_file = ''.join(date_file.split('_')[2])
+
+    if key.startswith('Academy/B'):
+        df = pd.read_csv(obj['Body'])
+        df.insert(2, "course", "Business")
+        df.insert(3, "date", date_file)
+
+    elif key.startswith('Academy/D'):
+        df = pd.read_csv(obj['Body'])
+        df.insert(2, "course", "Data")
+        df.insert(3, "date", date_file)
+
+    elif key.startswith('Academy/E'):
+        df = pd.read_csv(obj['Body'])
+        df.insert(2, "course", "Engineering")
+        df.insert(3, "date", date_file)
+
+    return df
+
+
 # returns a pandas dataframe for any file format of a single file
-def convert_to_df(obj, file_type):
+def convert_to_df(obj, file_type: str, file_name: str):
     data = []
 
-    if file_type == 'csv':
+    if file_name is not None:
+        data = academy_csv_to_pd(obj, file_name)
+
+    elif file_type == 'csv':
         data = pd.read_csv(obj['Body'])
 
     elif file_type == 'json':
@@ -79,23 +107,23 @@ def convert_to_df(obj, file_type):
 
 
 # convert all the files of the same format and folder to a single pandas dataframe
-def convert_all_to_df(file_objects: list, file_type: str):
+def convert_all_to_df(file_objects: list, file_type: str, academy_csvs_file_names: list = None):
     df = pd.DataFrame()
 
     # for each file, convert to a dataframe and add it onto the current dataframe
+    i = 0
     for obj in file_objects:
-        df = pd.concat([df, convert_to_df(obj, file_type)])
+        df = pd.concat([df, convert_to_df(obj, file_type, academy_csvs_file_names[i])])
+        i += 1
 
     return df
 
 
 # converts a dict of file objects into a dict of aggregated pandas dataframes of the same file type and folder
-def convert(files_dict: dict) -> dict:
-    academy_csv_df = convert_all_to_df(files_dict["academy_csv"], 'csv')
+def convert(files_dict: dict, academy_csvs_file_names: list) -> dict:
+    academy_csv_df = convert_all_to_df(files_dict["academy_csv"], 'csv', academy_csvs_file_names)
     talent_json_df = convert_all_to_df(files_dict["json"], 'json')
     talent_txt_df = convert_all_to_df(files_dict["txt"], 'txt')
     talent_csv_df = convert_all_to_df(files_dict["csv"], 'csv')
     dataframes = {"academy_csv": academy_csv_df, "json": talent_json_df, "txt": talent_txt_df, "csv": talent_csv_df}
     return dataframes
-
-
