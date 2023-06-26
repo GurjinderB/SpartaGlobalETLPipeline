@@ -84,3 +84,15 @@ def convert_to_date(date_str):
     new_date_str = f'{day} {month} {year}' 
     # Convert to datetime
     return pd.to_datetime(new_date_str, format='%d %B %Y')  
+
+# Academy
+def clean_talent_csv(academy_csv_df):
+    # converting all scores to int
+    behaviours = ['Analytic', 'Independent', 'Determined', 'Professional', 'Studious', 'Imaginative']
+    week_numbers = [f'_W{i}' for i in range(1, 11)]
+    column_names = [behaviour + week_number for behaviour in behaviours for week_number in week_numbers]
+    academy_csv_df[column_names] = academy_csv_df[column_names].astype('Int64')
+
+    # converting start date values to date-time
+    academy_csv_df['start_date'] = academy_csv_df['start_date'].astype('datetime64[ns]')
+    return academy_csv_df
