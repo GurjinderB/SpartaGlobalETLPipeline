@@ -2,7 +2,7 @@
 # cohort name, e.g: 'Business_20'
 # start date, converted to datetime
 # 
-# output is three dataframes, each containing data
+# output is three dataframes
 # uses Micheal A academy_extraction work
 
 import boto3
@@ -59,17 +59,18 @@ engineering_df = pd.concat(engineering, ignore_index=True)
 data_df = pd.concat(data, ignore_index=True)
 
 # converting all behaviour scores to type int
-behaviours = ['Analytic', 'Independent', 'Determined', 'Professional', 'Studious', 'Imaginative']
-week_numbers = [f'_W{i}' for i in range(1, 11)]
-column_names = [behaviour + week_number for behaviour in behaviours for week_number in week_numbers]
+def convert_scores_to_int(df):
+    behaviours = ['Analytic', 'Independent', 'Determined', 'Professional', 'Studious', 'Imaginative']
+    week_numbers = [f'_W{i}' for i in range(1, 11)]
+    column_names = [behaviour + week_number for behaviour in behaviours for week_number in week_numbers]
+    df[column_names] = df[column_names].astype('Int64')
+    return df
 
-business_df[column_names] = business_df[column_names].astype('Int64')
-engineering_df[column_names] = engineering_df[column_names].astype('Int64')
-data_df[column_names] = data_df[column_names].astype('Int64')
 
 # converting start date values to date-time
-business_df['start_date'] = business_df['start_date'].astype('datetime64[ns]')
-engineering_df['start_date'] = engineering_df['start_date'].astype('datetime64[ns]')
-data_df['start_date'] = data_df['start_date'].astype('datetime64[ns]')
+def convert_startdate_to_datetime(df):
+    df['start_date'] = df['start_date'].astype('datetime64[ns]')
+    return df
+
 
 
