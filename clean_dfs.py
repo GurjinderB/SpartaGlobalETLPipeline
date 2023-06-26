@@ -123,6 +123,7 @@ def clean_talent_json(talent_json_df):
 
     # Replacing inconsistencies in dates
     talent_json_df['date'] = talent_json_df['date'].str.replace('//', '/')
+    return talent_json_df
 
 # Defininf a function to check for dictionaries and change the data types inside
 def update_dict_format(df_dict):
