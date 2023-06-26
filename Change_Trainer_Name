@@ -1,0 +1,6 @@
+# Change name of trainer Ely Kely to Elly Kelly
+
+old_name = "Ely Kely"
+new_name = "Elly Kelly"
+
+business_.loc[:, ["trainer"]] = business_.loc[:, ["trainer"]].replace(old_name, new_name)
