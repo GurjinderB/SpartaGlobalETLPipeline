@@ -1,6 +1,8 @@
 import pandas as pd
 import os
 import json
+import boto3
+from file_extraction import *
 
 
 # converts the body of a text file object into a pandas dataframe
@@ -65,19 +67,15 @@ def academy_csv_to_pd(obj, file_name: str):
     key = file_name
     date_file = key.split(".")[0]
     date_file = ''.join(date_file.split('_')[2])
+
     df = pd.read_csv(obj['Body'])
 
-    if key.startswith('Academy/B'):
-        df.insert(2, "course", "Business")
-        df.insert(3, "date", date_file)
+    split_file_name = key.split("_")
+    course_name = split_file_name[0] + split_file_name[1]
+    course_name = course_name.split("/")[1]
 
-    elif key.startswith('Academy/D'):
-        df.insert(2, "course", "Data")
-        df.insert(3, "date", date_file)
-
-    elif key.startswith('Academy/E'):
-        df.insert(2, "course", "Engineering")
-        df.insert(3, "date", date_file)
+    df.insert(2, "course", course_name)
+    df.insert(3, "date", date_file)
 
     return df
 
