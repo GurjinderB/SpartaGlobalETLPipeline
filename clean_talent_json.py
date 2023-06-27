@@ -1,3 +1,5 @@
+import pandas as pd
+
 def clean_talent_json(talent_json_df):
     
     # Filling Null values with a string 'N/A'
