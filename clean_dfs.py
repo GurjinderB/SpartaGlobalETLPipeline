@@ -86,7 +86,7 @@ def convert_to_date(date_str):
     return pd.to_datetime(new_date_str, format='%d %B %Y')  
 
 # Academy
-def clean_talent_csv(academy_csv_df):
+def clean_academy_csv(academy_csv_df):
     # converting all scores to int
     behaviours = ['Analytic', 'Independent', 'Determined', 'Professional', 'Studious', 'Imaginative']
     week_numbers = [f'_W{i}' for i in range(1, 11)]
