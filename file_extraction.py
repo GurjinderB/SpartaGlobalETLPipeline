@@ -2,7 +2,7 @@ import boto3
 
 
 # extracts a set of files of the same format to its associated dictionary key
-def extract_file_type(s3, prefix: str, files_dict: dict, file_type: str = None):
+def extract_file_type(s3, prefix: str, files_dict: dict, file_type: str = None) -> list:
     bucket = 'data-eng-228-final-project'
     data = s3.list_objects_v2(Bucket=bucket, Prefix=prefix)
     content = data['Contents']

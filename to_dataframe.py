@@ -68,19 +68,17 @@ def academy_csv_to_pd(obj, file_name: str):
     key = file_name
     date_file = key.split(".")[0]
     date_file = ''.join(date_file.split('_')[2])
+    df = pd.read_csv(obj['Body'])
 
     if key.startswith('Academy/B'):
-        df = pd.read_csv(obj['Body'])
         df.insert(2, "course", "Business")
         df.insert(3, "date", date_file)
 
     elif key.startswith('Academy/D'):
-        df = pd.read_csv(obj['Body'])
         df.insert(2, "course", "Data")
         df.insert(3, "date", date_file)
 
     elif key.startswith('Academy/E'):
-        df = pd.read_csv(obj['Body'])
         df.insert(2, "course", "Engineering")
         df.insert(3, "date", date_file)
 
@@ -88,7 +86,7 @@ def academy_csv_to_pd(obj, file_name: str):
 
 
 # returns a pandas dataframe for any file format of a single file
-def convert_to_df(obj, file_type: str, file_name: str):
+def convert_to_df(obj, file_type: str, file_name: str = None):
     data = []
 
     if file_name is not None:
@@ -113,7 +111,10 @@ def convert_all_to_df(file_objects: list, file_type: str, academy_csvs_file_name
     # for each file, convert to a dataframe and add it onto the current dataframe
     i = 0
     for obj in file_objects:
-        df = pd.concat([df, convert_to_df(obj, file_type, academy_csvs_file_names[i])])
+        if academy_csvs_file_names is not None:
+            df = pd.concat([df, convert_to_df(obj, file_type, academy_csvs_file_names[i])])
+        else:
+            df = pd.concat([df, convert_to_df(obj, file_type)])
         i += 1
 
     return df
