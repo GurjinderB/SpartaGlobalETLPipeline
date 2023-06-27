@@ -1,7 +1,6 @@
 import pandas as pd
 import os
 import json
-from file_extraction import *
 
 
 # converts the body of a text file object into a pandas dataframe
@@ -63,8 +62,6 @@ def json_to_pd(obj):
 
 
 def academy_csv_to_pd(obj, file_name: str):
-    df = pd.DataFrame()
-
     key = file_name
     date_file = key.split(".")[0]
     date_file = ''.join(date_file.split('_')[2])
