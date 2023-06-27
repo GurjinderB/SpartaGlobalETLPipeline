@@ -103,7 +103,7 @@ def clean_talent_json(talent_json_df):
 
     # Converting columns values to strings and capitalizing them
     convert_clm = [
-        'name', 'weaknesses', 'strengths', 'self_development', 'geo_flex', 
+        'name', 'self_development', 'geo_flex', 
         'financial_support_self', 'result', 'course_interest'
         ]
     
