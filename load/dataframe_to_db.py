@@ -3,7 +3,7 @@ import sqlite3
 #takes in a df and import its to table in a databse .db file
 def df_to_db(df: pd.DataFrame, table_name: str, database_name: str):
     con = sqlite3.connect(database_name)
-    df.to_sql(table_name, con, if_exists='replace', index=False)
+    df.to_sql(table_name, con, if_exists='append', index=False)
     con.close()    
     
     
