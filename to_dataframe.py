@@ -71,7 +71,7 @@ def academy_csv_to_pd(obj, file_name: str):
     df = pd.read_csv(obj['Body'])
 
     split_file_name = key.split("_")
-    course_name = split_file_name[0] + split_file_name[1]
+    course_name = split_file_name[0] + ' ' + split_file_name[1]
     course_name = course_name.split("/")[1]
 
     df.insert(2, "course", course_name)
