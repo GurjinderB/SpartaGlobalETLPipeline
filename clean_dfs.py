@@ -120,6 +120,7 @@ def clean_talent_json(talent_json_df):
 
     # Replacing inconsistencies in dates
     talent_json_df['date'] = talent_json_df['date'].str.replace('//', '/')
+    talent_json_df['date'] = pd.to_datetime(talent_json_df['date'], dayfirst=True)
     return talent_json_df
 
 # Defininf a function to check for dictionaries and change the data types inside
