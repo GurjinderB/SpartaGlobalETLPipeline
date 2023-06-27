@@ -116,7 +116,7 @@ def clean_talent_json(talent_json_df):
     # Converting 'self_development', 'geo_flex', 'financial_support_self', 
     # 'result' to boolean values
     convert_clm = ['self_development', 'geo_flex', 'financial_support_self', 'result']
-    mapping = {'Yes': True, 'No': False, 'Pass': True, 'Fail': False}
+    mapping = {'YES': True, 'NO': False, 'PASS': True, 'FAIL': False}
     talent_json_df[convert_clm] = talent_json_df[convert_clm].replace(mapping)
     
     # Applying a function to dictionaries
