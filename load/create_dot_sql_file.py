@@ -1,7 +1,7 @@
 import sqlite3
 
-# create a .sql file from using .db file
-def create_dot_sql_file(database_name: str, dot_sql_file: str):
+# create a .sql file using .db file
+def create_sql_file(database_name: str, dot_sql_file: str):
     conn = sqlite3.connect(database_name)
     cursor = conn.cursor()
 
