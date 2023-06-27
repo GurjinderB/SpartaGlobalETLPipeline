@@ -65,7 +65,6 @@ display(trainers)
 # In[ ]:
 
 
-#Function to seperate columns and drop duplicates
 def trainers(df):
     trainers_course = df[["trainer", "course", "date"]]
 
@@ -73,14 +72,6 @@ def trainers(df):
 
     make_upper(trainer_course, "trainer")
 
-    return trainer_course
-
-
-# In[ ]:
-
-
-#Function to give id to table and make it its index
-def give_id(trainer_course):
     trainer_course['trainer_id'] = range(1, len(trainer_course) + 1)
 
     trainers = trainer_course.set_index('trainer_id')
