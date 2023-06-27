@@ -1,4 +1,3 @@
-
 def clean_talent_json(talent_json_df):
     
     # Filling Null values with a string 'N/A'
@@ -6,7 +5,7 @@ def clean_talent_json(talent_json_df):
 
     # Converting columns values to strings and capitalizing them
     convert_clm = [
-        'name', 'weaknesses', 'strengths', 'self_development', 'geo_flex', 
+        'name', 'self_development', 'geo_flex', 
         'financial_support_self', 'result', 'course_interest'
         ]
     
@@ -22,6 +21,7 @@ def clean_talent_json(talent_json_df):
     talent_json_df = talent_json_df.applymap(update_dict_format)
 
     # Replacing inconsistencies in dates
+    talent_json_df['date'] = pd.to_datetime(talent_json_df['date'], dayfirst=True)
     talent_json_df['date'] = talent_json_df['date'].str.replace('//', '/')
 
 # Defininf a function to check for dictionaries and change the data types inside
