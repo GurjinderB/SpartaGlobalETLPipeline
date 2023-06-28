@@ -67,9 +67,10 @@ def academy_table_df(candidates, course_table=course_table(academy_table()), aca
             
     course_table['course_id'] = course_table.index
     merged_df = pd.merge(course_table, academy_df,  on='course_name', how='inner')
-    academy = merged_df.set_index('course_id')
+    merged_df = merged_df.set_index('course_id')
+    academy_df = pd.DataFrame(academy['name_id'])
     
-    return academy['name_id']
+    return academy_df
 
     
 
