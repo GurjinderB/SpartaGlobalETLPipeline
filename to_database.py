@@ -1,7 +1,7 @@
 import sqlite3
 
 
-def df_to_db(df: pd.DataFrame, table_name: str, database_name: str):
+def df_to_db(df, table_name: str, database_name: str):
     con = sqlite3.connect(database_name)
     df.to_sql(table_name, con, if_exists='append', index=False)
     con.close()
