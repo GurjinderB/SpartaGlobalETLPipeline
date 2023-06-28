@@ -49,6 +49,7 @@ def address_id_in_candidates(candidates, address_table):
         columns=['city_x', 'address', 'postcode_x', 'city_y', 'postcode_y', 'date_y', 'weaknesses', 'strengths',
                  'tech_self_score'])
     merged = merged.rename(columns={"date_x": "date"})
+    merged = merged.drop_duplicates(subset='person_id', keep='first')
     return merged
 
 
