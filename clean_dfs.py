@@ -96,6 +96,8 @@ def clean_academy_csv(academy_csv_df):
     week_numbers = [f'_W{i}' for i in range(1, 11)]
     column_names = [behaviour + week_number for behaviour in behaviours for week_number in week_numbers]
     academy_csv_df[column_names] = academy_csv_df[column_names].astype('Int64')
+    # Convert 'name' column to string and to uppercase
+    academy_csv_df['name'] = academy_csv_df['name'].astype(str).str.upper()
     return academy_csv_df
 
 
