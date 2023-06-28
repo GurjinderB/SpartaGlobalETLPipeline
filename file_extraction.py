@@ -1,6 +1,5 @@
 import boto3
 
-
 # extracts a set of files of the same format to its associated dictionary key
 def extract_file_type(s3, prefix: str, files_dict: dict, file_type: str = None):
     bucket = 'data-eng-228-final-project'

@@ -1,15 +1,130 @@
 name,date,tech_self_score,strengths,weaknesses,self_development,geo_flex,financial_support_self,result,course_interest
-Stillmann Castano,22/08/2019,"{'C#': 6, 'Java': 5, 'R': 2, 'JavaScript': 2}",['Charisma'],"['Distracted', 'Impulsive', 'Introverted']",Yes,Yes,Yes,Pass,Business
-Hilary Willmore,01/08/2019,"{'Python': 1, 'C#': 4, 'Java': 2, 'C++': 4}","['Patient', 'Curious', 'Problem Solving']","['Overbearing', 'Chatty', 'Indifferent']",No,Yes,Yes,Fail,Data
-Efrem Whipple,22/08/2019,"{'Ruby': 4, 'C++': 4}","['Courteous', 'Independent', 'Patient']","['Introverted', 'Impulsive', 'Anxious']",Yes,Yes,Yes,Pass,Business
-Sydel Fenne,28/08/2019,"{'Java': 3, 'SPSS': 4}",['Passionate'],"['Perfectionist', 'Sensitive']",Yes,Yes,Yes,Pass,Data
-Michel Lebarree,07/08/2019,"{'Python': 3, 'Java': 4, 'Ruby': 1, 'R': 2, 'PHP': 2, 'C++': 3}",['Versatile'],"['Controlling', 'Perfectionist', 'Chatty']",Yes,Yes,Yes,Pass,Engineering
-Cooper Ingraham,14/08/2019,"{'C#': 3, 'Java': 1, 'PHP': 4}","['Versatile', 'Rational']",['Immature'],Yes,Yes,No,Fail,Business
-Bird Le Count,22/08/2019,"{'SPSS': 3, 'PHP': 3, 'C++': 2}",['Collaboration'],"['Impatient', 'Conventional', 'Undisciplined']",Yes,Yes,Yes,Fail,Business
-Orly Lorens,01/08/2019,"{'Ruby': 2, 'R': 5, 'SPSS': 1, 'JavaScript': 1}","['Ambitious', 'Independent', 'Passionate']","['Conventional', 'Passive']",No,Yes,Yes,Fail,Business
-Hannah Messum,29/08/2019,"{'Python': 8, 'Ruby': 2, 'JavaScript': 2}","['Reliable', 'Passionate']",['Intolerant'],Yes,Yes,Yes,Fail,Data
-Gavin Lambregts,21/08/2019,"{'Python': 3, 'C#': 2, 'C++': 5, 'JavaScript': 1}","['Altruism', 'Empathy', 'Problem Solving']","['Chaotic', 'Selfish']",Yes,Yes,Yes,Pass,Data
-Letta Halston,08/08/2019,"{'PHP': 3, 'JavaScript': 4}","['Listening', 'Passionate']","['Perfectionist', 'Immature', 'Passive']",Yes,Yes,Yes,Fail,Business
-Rivalee Eagleton,08/08/2019,"{'Python': 3, 'Ruby': 4, 'JavaScript': 2}","['Organisation', 'Passionate', 'Versatile']","['Conventional', 'Sensitive', 'Introverted']",Yes,Yes,No,Fail,Engineering
-Neda Marmyon,15/08/2019,"{'Python': 4, 'Ruby': 5, 'R': 7, 'C++': 1}","['Curious', 'Ambitious', 'Consistent']",['Sensitive'],Yes,Yes,Yes,Pass,Data
-Kermy Caves,29/08/2019,{'PHP': 2},"['Versatile', 'Ambitious']","['Slow', 'Overbearing', 'Conventional']",Yes,No,Yes,Fail,Business
+Kerr Allanson,24/07/2019,"{'C#': 2, 'R': 3}","['Curious', 'Composure', 'Independent']","['Procrastination', 'Conventional', 'Chaotic']",No,Yes,Yes,Fail,Data
+Eldin Broster,17/07/2019,"{'C#': 4, 'R': 3, 'C++': 2}","['Creative', 'Innovative']","['Controlling', 'Stubborn', 'Slow']",Yes,Yes,Yes,Fail,Data
+Cherrita Mcgilleghole,11/07/2019,"{'R': 2, 'SPSS': 3, 'JavaScript': 10}","['Efficient', 'Empathy', 'Curious']","['Indifferent', 'Slow', 'Stubborn']",Yes,Yes,Yes,Pass,Engineering
+Ortensia Winscomb,11/07/2019,"{'Ruby': 4, 'R': 6, 'JavaScript': 1}","['Versatile', 'Competitive', 'Rational']","['Slow', 'Introverted', 'Procrastination']",Yes,Yes,Yes,Pass,Data
+Fleming Mcmurdo,09/07/2019,"{'C#': 5, 'Java': 2, 'R': 3, 'PHP': 2, 'C++': 2, 'JavaScript': 3}",['Organisation'],['Impatient'],Yes,No,Yes,Fail,Data
+Brigid Blabber,23/07/2019,"{'C#': 6, 'Ruby': 2, 'R': 3, 'SPSS': 1}","['Problem Solving', 'Innovative', 'Critical Thinking']","['Selfish', 'Introverted', 'Stubborn']",Yes,Yes,Yes,Pass,Business
+Ludvig Grzes,16/07/2019,"{'Java': 3, 'Ruby': 1}","['Organisation', 'Collaboration', 'Altruism']","['Procrastination', 'Immature', 'Impatient']",Yes,Yes,Yes,Pass,Data
+Hurley Collyer,24/07/2019,{'Ruby': 3},['Perfectionism'],"['Chaotic', 'Slow', 'Chatty']",Yes,No,Yes,Fail,Engineering
+Kitty Allen,02/07/2019,"{'Python': 5, 'C#': 5, 'Java': 4, 'R': 3}","['Determined', 'Creative']",['Sensitive'],Yes,Yes,Yes,Pass,Business
+Bary Fendlen,18/07/2019,"{'Python': 4, 'Java': 1, 'Ruby': 3, 'PHP': 2, 'C++': 3, 'JavaScript': 1}",['Listening'],['Immature'],Yes,Yes,Yes,Fail,Business
+Horten Goble,24/07/2019,"{'C#': 4, 'Java': 1, 'SPSS': 1}","['Courteous', 'Critical Thinking', 'Innovative']",['Immature'],Yes,Yes,Yes,Pass,Business
+Natassia Pawle,03/07/2019,"{'Python': 3, 'C#': 1, 'Java': 5, 'JavaScript': 3}","['Altruism', 'Empathy', 'Perfectionism']","['Intolerant', 'Impulsive', 'Passive']",Yes,Yes,Yes,Pass,Engineering
+Karoly Skates,16/07/2019,"{'Python': 5, 'Java': 4, 'Ruby': 4, 'SPSS': 1, 'PHP': 2, 'C++': 2}","['Determined', 'Critical Thinking']",['Competitive'],Yes,Yes,Yes,Pass,Engineering
+Albina Alves,02/07/2019,"{'Python': 2, 'Java': 1, 'Ruby': 1, 'PHP': 1}","['Altruism', 'Creative', 'Problem Solving']","['Selfish', 'Procrastination']",Yes,Yes,Yes,Pass,Business
+Evered Giovanizio,04/07/2019,"{'Python': 6, 'R': 5, 'C++': 2}","['Competitive', 'Listening']","['Chaotic', 'Intolerant', 'Undisciplined']",No,Yes,Yes,Fail,Business
+Elliot Yarnley,23/07/2019,"{'Java': 3, 'SPSS': 5, 'JavaScript': 8}","['Collaboration', 'Consistent']","['Sensitive', 'Chatty', 'Distracted']",Yes,Yes,Yes,Fail,Engineering
+Vanessa Gives,30/07/2019,"{'Python': 5, 'R': 3, 'PHP': 1, 'JavaScript': 1}",['Perfectionism'],"['Chatty', 'Critical']",No,Yes,Yes,Fail,Data
+Fremont Oxlee,18/07/2019,"{'Java': 1, 'Ruby': 1, 'PHP': 2, 'C++': 3}","['Independent', 'Collaboration', 'Creative']","['Slow', 'Conventional', 'Competitive']",Yes,Yes,Yes,Fail,Business
+Fan Hember,04/07/2019,"{'C#': 5, 'Java': 1}","['Determined', 'Independent', 'Courteous']","['Passive', 'Impatient']",Yes,No,Yes,Fail,Business
+Fee Karpe,17/07/2019,"{'Python': 7, 'Java': 2, 'Ruby': 2}","['Creative', 'Efficient']","['Procrastination', 'Perfectionist']",Yes,Yes,Yes,Pass,Data
+Fee Karpe,17/07/2019,"{'Python': 7, 'Java': 2, 'Ruby': 2}","['Creative', 'Efficient']","['Procrastination', 'Perfectionist']",Yes,Yes,Yes,Pass,Data
+Katrine Westley,24/07/2019,"{'C#': 3, 'SPSS': 3}",['Perfectionism'],"['Chaotic', 'Competitive']",Yes,No,Yes,Fail,Engineering
+Quill Tompkinson,10/07/2019,"{'Python': 2, 'C#': 2, 'Ruby': 5, 'PHP': 2}",['Courteous'],"['Indecisive', 'Critical']",Yes,Yes,Yes,Fail,Data
+Donavon Glazebrook,23/07/2019,{'Java': 2},"['Altruism', 'Collaboration', 'Composure']","['Slow', 'Intolerant', 'Stubborn']",Yes,Yes,Yes,Pass,Business
+Gisele Beetham,25/07/2019,"{'C#': 3, 'Ruby': 3, 'JavaScript': 3}","['Independent', 'Problem Solving']","['Indifferent', 'Chaotic', 'Sensitive']",No,No,Yes,Fail,Data
+Hilliard Reinard,18/07/2019,"{'SPSS': 5, 'PHP': 2}",['Problem Solving'],"['Passive', 'Undisciplined']",Yes,Yes,Yes,Pass,Engineering
+Ira Rathbourne,18/07/2019,"{'SPSS': 3, 'C++': 5}","['Patient', 'Ambitious', 'Passionate']","['Competitive', 'Controlling', 'Slow']",Yes,Yes,Yes,Pass,Data
+Shaun Dowley,10/07/2019,"{'Python': 2, 'Java': 3, 'R': 2, 'PHP': 2}",['Determined'],['Indecisive'],Yes,Yes,No,Fail,Business
+Hartwell Silver,30/07/2019,"{'Java': 6, 'R': 5, 'PHP': 3}","['Determined', 'Listening']","['Chaotic', 'Competitive']",Yes,Yes,Yes,Pass,Engineering
+Shoshanna Janicek,18/07/2019,"{'Python': 3, 'Java': 2, 'C++': 4}",['Rational'],"['Intolerant', 'Impulsive']",Yes,Yes,Yes,Pass,Engineering
+Ingrid Cradick,24/07/2019,"{'Python': 5, 'SPSS': 2, 'PHP': 1, 'C++': 2, 'JavaScript': 1}","['Determined', 'Passionate']","['Overbearing', 'Conventional']",Yes,No,Yes,Fail,Data
+Chevy Pyburn,02/07/2019,"{'C#': 1, 'JavaScript': 1}","['Perfectionism', 'Patient', 'Organisation']","['Overbearing', 'Stubborn']",Yes,Yes,Yes,Pass,Engineering
+Bertram Esgate,30/07/2019,"{'C#': 4, 'R': 3, 'SPSS': 1, 'JavaScript': 2}","['Independent', 'Composure', 'Altruism']","['Selfish', 'Chatty', 'Controlling']",Yes,Yes,Yes,Pass,Data
+Larisa Warrington,02/07/2019,"{'Python': 2, 'Java': 3}","['Independent', 'Consistent']","['Distracted', 'Anxious']",No,Yes,Yes,Fail,Business
+Lissa Pumfrett,11/07/2019,{'C++': 4},"['Empathy', 'Perfectionism']",['Impulsive'],Yes,Yes,Yes,Pass,Data
+Demetrius Dunbavin,02/07/2019,"{'R': 1, 'SPSS': 1}","['Versatile', 'Passionate', 'Efficient']","['Stubborn', 'Passive']",Yes,Yes,Yes,Pass,Business
+Morgen Lilywhite,09/07/2019,,"['Composure', 'Versatile', 'Problem Solving']","['Impatient', 'Immature', 'Selfish']",Yes,Yes,Yes,Pass,Data
+Rickard Blakes,09/07/2019,"{'Ruby': 8, 'R': 3, 'SPSS': 1, 'PHP': 1, 'JavaScript': 3}","['Collaboration', 'Empathy']","['Undisciplined', 'Indecisive', 'Distracted']",Yes,Yes,Yes,Pass,Engineering
+Emily Barras,30/07/2019,"{'Ruby': 2, 'SPSS': 1}",['Altruism'],"['Conventional', 'Indifferent', 'Impatient']",Yes,Yes,Yes,Pass,Business
+Tonye Ambrogio,18/07/2019,"{'C#': 5, 'Java': 4, 'PHP': 1, 'C++': 5, 'JavaScript': 3}",['Listening'],"['Critical', 'Procrastination']",Yes,Yes,Yes,Pass,Data
+Robers Gentner,09/07/2019,"{'Java': 2, 'PHP': 6, 'C++': 1}",['Perfectionism'],"['Anxious', 'Conventional']",Yes,Yes,Yes,Fail,Data
+Kellyann Yorkston,16/07/2019,"{'Python': 3, 'Java': 3, 'Ruby': 4, 'SPSS': 2, 'PHP': 2, 'C++': 1}",['Courteous'],"['Intolerant', 'Controlling']",Yes,Yes,No,Fail,Data
+Olly Mougenel,16/07/2019,"{'Java': 3, 'Ruby': 2, 'R': 7, 'SPSS': 2, 'PHP': 1, 'C++': 2}","['Problem Solving', 'Perfectionism']","['Perfectionist', 'Slow', 'Undisciplined']",Yes,Yes,No,Fail,Business
+Merrill Mckie,23/07/2019,"{'Python': 2, 'R': 5, 'PHP': 5, 'C++': 4, 'JavaScript': 1}","['Versatile', 'Ambitious']","['Perfectionist', 'Intolerant', 'Overbearing']",Yes,Yes,Yes,Pass,Business
+Kass Castellan,03/07/2019,"{'C#': 4, 'Ruby': 3}","['Creative', 'Listening']",['Indecisive'],Yes,Yes,Yes,Pass,Engineering
+Marlon Reside,30/07/2019,"{'SPSS': 4, 'JavaScript': 3}","['Courteous', 'Altruism']",['Undisciplined'],Yes,Yes,Yes,Pass,Data
+Oswald Lyndon,10/07/2019,"{'R': 9, 'SPSS': 4, 'C++': 3, 'JavaScript': 5}","['Competitive', 'Independent']","['Procrastination', 'Impatient']",Yes,Yes,Yes,Pass,Engineering
+Arty Indruch,02/07/2019,"{'C#': 3, 'Java': 4, 'Ruby': 5, 'R': 6, 'SPSS': 2, 'C++': 3}","['Courteous', 'Patient', 'Creative']",['Intolerant'],Yes,Yes,Yes,Pass,Business
+Sharl Shambrooke,04/07/2019,"{'Python': 4, 'C#': 9, 'Ruby': 1, 'R': 2}","['Innovative', 'Reliable', 'Curious']",['Undisciplined'],Yes,Yes,Yes,Fail,Engineering
+Antonius Heape,17/07/2019,"{'Python': 2, 'C#': 2, 'Ruby': 8}",['Ambitious'],['Procrastination'],Yes,Yes,Yes,Pass,Engineering
+Rad Bench,17/07/2019,"{'Ruby': 1, 'R': 2, 'PHP': 2}","['Independent', 'Critical Thinking', 'Ambitious']","['Indecisive', 'Selfish']",Yes,Yes,Yes,Pass,Data
+Agace O'Shields,30/07/2019,"{'SPSS': 1, 'PHP': 1}","['Collaboration', 'Innovative']","['Undisciplined', 'Immature', 'Passive']",Yes,Yes,Yes,Pass,Business
+Mela Burgill,09/07/2019,"{'SPSS': 3, 'C++': 1}","['Altruism', 'Organisation', 'Collaboration']",['Distracted'],Yes,Yes,Yes,Pass,Business
+Justis Gilham,25/07/2019,"{'Python': 2, 'SPSS': 3, 'PHP': 4, 'JavaScript': 6}","['Altruism', 'Competitive', 'Critical Thinking']","['Competitive', 'Procrastination']",Yes,Yes,Yes,Pass,Engineering
+Valery Delia,24/07/2019,"{'Java': 2, 'R': 3, 'SPSS': 3, 'C++': 2}","['Composure', 'Rational']",['Anxious'],No,Yes,Yes,Fail,Engineering
+Kylie Cordell,18/07/2019,{'C#': 3},['Competitive'],"['Chaotic', 'Impulsive', 'Critical']",Yes,Yes,Yes,Pass,Business
+Emmett Stogill,17/07/2019,"{'Python': 6, 'C#': 1, 'R': 4}","['Consistent', 'Perfectionism']","['Chaotic', 'Introverted']",Yes,Yes,No,Fail,Engineering
+Julianne Neagle,09/07/2019,"{'Python': 5, 'Java': 2, 'Ruby': 7, 'C++': 1}","['Perfectionism', 'Rational']",['Procrastination'],Yes,Yes,Yes,Fail,Engineering
+Cobbie Wolfinger,30/07/2019,"{'C#': 1, 'SPSS': 2}","['Passionate', 'Organisation']","['Perfectionist', 'Immature', 'Indifferent']",No,Yes,Yes,Fail,Data
+Blondy Fearnall,04/07/2019,"{'Python': 4, 'C#': 3, 'Java': 4, 'JavaScript': 4}","['Efficient', 'Innovative']",['Introverted'],Yes,Yes,Yes,Pass,Engineering
+Bowie Endersby,16/07/2019,{'C#': 1},['Efficient'],['Indifferent'],Yes,Yes,Yes,Pass,Data
+Andrey Cochran,24/07/2019,"{'C#': 2, 'Ruby': 3}","['Innovative', 'Listening', 'Competitive']","['Perfectionist', 'Indecisive', 'Impatient']",Yes,Yes,Yes,Pass,Data
+Letizia Mckern,04/07/2019,"{'Python': 2, 'C++': 5, 'JavaScript': 4}","['Organisation', 'Charisma', 'Problem Solving']","['Distracted', 'Undisciplined']",Yes,Yes,Yes,Pass,Business
+Fons Ghiotto,16/07/2019,"{'Java': 3, 'PHP': 2}","['Listening', 'Collaboration', 'Independent']","['Chaotic', 'Indecisive']",Yes,Yes,Yes,Pass,Engineering
+Sal Inglesent,04/07/2019,"{'C#': 3, 'Ruby': 6, 'C++': 6, 'JavaScript': 1}","['Perfectionism', 'Efficient', 'Passionate']",['Overbearing'],Yes,Yes,Yes,Pass,Data
+Sela Pavese,25/07/2019,"{'Ruby': 2, 'R': 4, 'SPSS': 2, 'PHP': 1, 'C++': 5}","['Rational', 'Courteous']",['Passive'],Yes,Yes,Yes,Fail,Business
+Alison Tett,10/07/2019,"{'Python': 1, 'C#': 2, 'SPSS': 3}","['Versatile', 'Courteous']","['Overbearing', 'Impulsive']",Yes,Yes,Yes,Pass,Business
+Gabi Ivins,04/07/2019,"{'Python': 1, 'R': 2, 'SPSS': 1, 'PHP': 3, 'JavaScript': 7}","['Creative', 'Charisma']","['Undisciplined', 'Indecisive', 'Critical']",Yes,Yes,Yes,Pass,Business
+Noe Fortnam,09/07/2019,"{'Python': 1, 'R': 3, 'JavaScript': 1}",['Determined'],"['Competitive', 'Stubborn', 'Chatty']",Yes,Yes,Yes,Pass,Engineering
+Ronny Vasilchenko,23/07/2019,"{'R': 1, 'C++': 1}","['Versatile', 'Curious', 'Determined']","['Indecisive', 'Impulsive']",Yes,Yes,Yes,Pass,Business
+Blair Woollhead,18/07/2019,"{'Python': 5, 'Ruby': 1, 'SPSS': 2}",['Organisation'],['Chatty'],Yes,Yes,No,Fail,Engineering
+Henrieta Chatto,04/07/2019,{'Java': 3},"['Innovative', 'Versatile']","['Conventional', 'Undisciplined', 'Indifferent']",Yes,Yes,Yes,Pass,Business
+Eba Gary,02/07/2019,"{'Ruby': 5, 'SPSS': 2}","['Patient', 'Determined', 'Innovative']","['Indecisive', 'Controlling']",Yes,Yes,Yes,Pass,Engineering
+Marcela Riding,25/07/2019,"{'Python': 4, 'SPSS': 2, 'JavaScript': 4}","['Empathy', 'Competitive']","['Impulsive', 'Introverted']",Yes,Yes,Yes,Pass,Business
+Hewet Derwin,11//07/2019,"{'Ruby': 3, 'R': 1, 'PHP': 2}",['Consistent'],"['Chaotic', 'Slow']",Yes,Yes,Yes,Pass,Engineering
+Demetria O' Sullivan,18/07/2019,"{'Java': 5, 'R': 4, 'SPSS': 4, 'PHP': 3, 'JavaScript': 2}","['Perfectionism', 'Independent', 'Critical Thinking']",['Perfectionist'],Yes,No,Yes,Fail,Data
+Steffen Marcombe,04/07/2019,"{'C#': 5, 'Ruby': 1, 'PHP': 4}","['Listening', 'Rational']","['Immature', 'Overbearing', 'Anxious']",Yes,Yes,Yes,Pass,Business
+Aguste Tann,30/07/2019,{'JavaScript': 1},"['Perfectionism', 'Charisma']","['Introverted', 'Controlling', 'Distracted']",Yes,Yes,Yes,Pass,Business
+D'Arcy Bover,02/07/2019,"{'C#': 6, 'Ruby': 4, 'JavaScript': 3}",['Creative'],"['Indifferent', 'Immature', 'Introverted']",Yes,Yes,Yes,Pass,Engineering
+Chadd Klampt,03/07/2019,"{'C#': 1, 'Java': 3, 'PHP': 4, 'JavaScript': 2}","['Patient', 'Perfectionism']",['Indecisive'],Yes,Yes,Yes,Pass,Engineering
+Pren Varcoe,30/07/2019,"{'R': 6, 'SPSS': 2, 'C++': 2, 'JavaScript': 3}","['Determined', 'Listening']","['Critical', 'Impatient']",No,Yes,Yes,Fail,Engineering
+Abraham Rockell,02/07/2019,"{'Python': 3, 'R': 2, 'SPSS': 3}",['Independent'],"['Overbearing', 'Critical', 'Controlling']",Yes,Yes,Yes,Pass,Engineering
+Laurette Hembling,09/07/2019,"{'Python': 2, 'C#': 1, 'Ruby': 4, 'R': 3, 'C++': 1, 'JavaScript': 1}","['Versatile', 'Determined', 'Problem Solving']","['Sensitive', 'Intolerant', 'Impulsive']",No,Yes,Yes,Fail,Data
+Karlis Bottle,18/07/2019,{'PHP': 1},['Composure'],['Sensitive'],No,Yes,No,Fail,Business
+Wilhelm Jouanet,11/07/2019,"{'Python': 5, 'Java': 1}",['Perfectionism'],['Immature'],Yes,Yes,Yes,Pass,Data
+Peterus Bartolomeazzi,25/07/2019,"{'Python': 2, 'C#': 3, 'Java': 2, 'Ruby': 1}",['Independent'],['Intolerant'],Yes,Yes,Yes,Fail,Business
+Bari Streatfield,11/07/2019,"{'R': 2, 'PHP': 3, 'C++': 4}",['Problem Solving'],"['Indifferent', 'Overbearing']",Yes,Yes,Yes,Pass,Business
+Teriann Matyashev,04/07/2019,"{'Python': 1, 'Ruby': 1, 'R': 1}",['Independent'],"['Undisciplined', 'Conventional']",Yes,Yes,Yes,Pass,Business
+Uriel Eidelman,10/07/2019,"{'Python': 5, 'R': 2, 'C++': 4, 'JavaScript': 4}","['Innovative', 'Patient']","['Competitive', 'Overbearing']",Yes,Yes,Yes,Pass,Business
+Toddie Rubanenko,03/07/2019,"{'Python': 2, 'C#': 6}","['Collaboration', 'Organisation', 'Ambitious']",['Procrastination'],Yes,Yes,Yes,Pass,Data
+Drake Northcote,10/07/2019,"{'Python': 5, 'C#': 4, 'SPSS': 2, 'C++': 1}","['Independent', 'Listening', 'Reliable']",['Indifferent'],Yes,Yes,No,Fail,Engineering
+Engracia Andriolli,30/07/2019,"{'Python': 4, 'C#': 5}","['Rational', 'Organisation']","['Immature', 'Selfish', 'Impatient']",Yes,No,Yes,Fail,Engineering
+Cristina Finlan,31/07/2019,"{'Python': 2, 'PHP': 1, 'JavaScript': 3}","['Creative', 'Consistent']","['Introverted', 'Indecisive', 'Procrastination']",Yes,Yes,Yes,Pass,Business
+Markos Walter,16/07/2019,,"['Versatile', 'Organisation', 'Critical Thinking']","['Selfish', 'Slow']",Yes,Yes,Yes,Pass,Data
+Ofilia Keizman,17/07/2019,"{'Python': 2, 'Java': 5, 'PHP': 1, 'JavaScript': 1}",['Courteous'],"['Anxious', 'Sensitive', 'Passive']",Yes,Yes,Yes,Pass,Business
+Chev Spillane,02/07/2019,"{'SPSS': 5, 'C++': 7, 'JavaScript': 3}","['Organisation', 'Creative', 'Consistent']",['Stubborn'],Yes,Yes,Yes,Pass,Engineering
+Beauregard Cornehl,02/07/2019,"{'C#': 3, 'PHP': 1}","['Collaboration', 'Rational']","['Distracted', 'Immature', 'Stubborn']",Yes,Yes,Yes,Pass,Business
+Barclay Morter,30/07/2019,"{'Python': 4, 'C#': 3, 'Java': 5, 'PHP': 1, 'C++': 2}","['Collaboration', 'Competitive']",['Impulsive'],No,Yes,Yes,Fail,Business
+Clary Hertwell,30/07/2019,"{'Python': 3, 'Ruby': 5, 'C++': 2}","['Patient', 'Collaboration', 'Competitive']",['Indifferent'],No,Yes,Yes,Fail,Business
+Jessy Dollman,09/07/2019,"{'Python': 3, 'Java': 9, 'Ruby': 5}","['Versatile', 'Composure']",['Competitive'],Yes,Yes,Yes,Pass,Data
+Sibyl Gilardi,03/07/2019,"{'Python': 1, 'Java': 4, 'JavaScript': 4}",['Altruism'],['Overbearing'],Yes,Yes,Yes,Fail,Business
+Haywood Teager,03/07/2019,"{'Python': 3, 'Java': 3, 'Ruby': 1, 'SPSS': 4, 'PHP': 3, 'C++': 2}","['Composure', 'Efficient']","['Conventional', 'Perfectionist']",Yes,Yes,Yes,Pass,Engineering
+Doretta Henner,18/07/2019,"{'C#': 1, 'C++': 6}",['Altruism'],['Overbearing'],Yes,Yes,Yes,Pass,Business
+Niall Graine,04/07/2019,{'SPSS': 5},"['Altruism', 'Perfectionism']","['Perfectionist', 'Controlling']",Yes,Yes,Yes,Pass,Business
+Karel Toulamain,10/07/2019,"{'C#': 1, 'Ruby': 3, 'JavaScript': 3}","['Determined', 'Reliable', 'Creative']","['Anxious', 'Immature', 'Competitive']",No,Yes,Yes,Fail,Data
+Iosep Idle,03/07/2019,"{'Python': 4, 'C#': 4, 'Java': 5, 'SPSS': 2, 'JavaScript': 4}","['Collaboration', 'Problem Solving', 'Organisation']","['Distracted', 'Stubborn']",Yes,Yes,Yes,Pass,Data
+Duky Shailer,02/07/2019,"{'Python': 1, 'R': 1, 'SPSS': 5, 'JavaScript': 5}","['Empathy', 'Efficient', 'Listening']",['Competitive'],No,Yes,No,Fail,Data
+Christie Blincoe,31/07/2019,"{'Python': 4, 'PHP': 2}","['Innovative', 'Charisma', 'Critical Thinking']","['Critical', 'Indecisive', 'Immature']",Yes,Yes,Yes,Pass,Business
+Rik Waren,11/07/2019,"{'C#': 1, 'Ruby': 3, 'SPSS': 9, 'PHP': 1}","['Charisma', 'Critical Thinking']","['Chaotic', 'Sensitive']",Yes,Yes,Yes,Pass,Data
+Zelda Prestage,10/07/2019,"{'C#': 1, 'PHP': 3}","['Courteous', 'Organisation', 'Listening']","['Perfectionist', 'Overbearing']",Yes,Yes,Yes,Fail,Business
+Dannel Longmaid,18/07/2019,"{'Ruby': 1, 'SPSS': 8, 'C++': 4, 'JavaScript': 3}","['Efficient', 'Consistent']","['Competitive', 'Impulsive']",Yes,Yes,Yes,Pass,Engineering
+Ira Grima,25/07/2019,"{'Python': 2, 'C#': 2, 'R': 5, 'PHP': 1, 'JavaScript': 2}","['Courteous', 'Passionate', 'Empathy']","['Immature', 'Chaotic']",No,Yes,Yes,Fail,Engineering
+Vivyan Robuchon,11/07/2019,"{'Ruby': 4, 'JavaScript': 1}","['Composure', 'Listening']","['Selfish', 'Chaotic']",Yes,No,Yes,Fail,Engineering
+Gardner Estick,31/07/2019,"{'SPSS': 3, 'PHP': 1}","['Composure', 'Organisation', 'Consistent']",['Introverted'],Yes,Yes,Yes,Pass,Engineering
+Darin Healing,04/07/2019,"{'Python': 2, 'C#': 3, 'Ruby': 3, 'R': 6, 'PHP': 2}",['Composure'],['Chatty'],Yes,Yes,Yes,Pass,Engineering
+Teena Priel,18/07/2019,"{'C#': 2, 'Java': 4, 'Ruby': 2, 'PHP': 2}","['Determined', 'Curious']","['Sensitive', 'Passive', 'Impulsive']",Yes,No,No,Fail,Business
+Katinka Tyt,18/07/2019,"{'Java': 1, 'PHP': 3}","['Innovative', 'Competitive']","['Slow', 'Chatty']",Yes,Yes,Yes,Pass,Data
+Maxy Bensen,18/07/2019,"{'Python': 4, 'C#': 3, 'Java': 1, 'R': 5, 'PHP': 4, 'C++': 4}","['Reliable', 'Rational', 'Independent']",['Indifferent'],Yes,Yes,Yes,Pass,Engineering
+Donnie Sandwick,04/07/2019,"{'R': 2, 'SPSS': 3, 'C++': 3}",['Determined'],['Sensitive'],Yes,Yes,No,Fail,Data
+Natasha Christol,31/07/2019,"{'C#': 3, 'Java': 1, 'PHP': 2, 'JavaScript': 2}","['Creative', 'Collaboration']","['Selfish', 'Impatient', 'Chatty']",No,Yes,Yes,Fail,Data
+Scarlett Roarty,23/07/2019,"{'R': 2, 'PHP': 1}",['Curious'],"['Indecisive', 'Anxious', 'Sensitive']",Yes,Yes,Yes,Pass,Data
+Hurlee Hesey,25/07/2019,"{'Python': 2, 'R': 2}","['Reliable', 'Versatile', 'Innovative']","['Passive', 'Conventional']",Yes,Yes,No,Fail,Engineering
+Yehudit Killingbeck,30/07/2019,"{'R': 1, 'PHP': 2, 'C++': 5}","['Ambitious', 'Determined']",['Sensitive'],Yes,Yes,No,Fail,Engineering
+Riannon Baraclough,31/07/2019,"{'Python': 3, 'Java': 3, 'Ruby': 3, 'R': 1}","['Reliable', 'Empathy', 'Curious']",['Controlling'],Yes,Yes,Yes,Pass,Business
+Shay Obee,11/07/2019,"{'Java': 1, 'SPSS': 1, 'PHP': 4}","['Determined', 'Empathy', 'Organisation']",['Procrastination'],Yes,Yes,Yes,Pass,Business
+Collete Causbey,03/07/2019,"{'Python': 4, 'C#': 1, 'Java': 2, 'PHP': 1, 'C++': 4}","['Composure', 'Independent']","['Passive', 'Slow']",Yes,Yes,Yes,Pass,Business
+Tallia Rushford,31/07/2019,"{'C#': 2, 'C++': 5, 'JavaScript': 6}",['Versatile'],['Chaotic'],Yes,Yes,No,Fail,Data
+Angelica Neissen,31/07/2019,"{'Python': 8, 'C#': 1, 'Java': 5, 'Ruby': 1}","['Collaboration', 'Charisma']",['Distracted'],Yes,Yes,Yes,Fail,Business
+Merwyn Gossop,18/07/2019,{'JavaScript': 3},"['Consistent', 'Competitive', 'Charisma']",['Competitive'],Yes,Yes,Yes,Pass,Business
