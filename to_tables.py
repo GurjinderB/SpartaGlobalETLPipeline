@@ -48,7 +48,7 @@ def generate_address_df(df):
 
 def address_id_in_candidates(candidates, address_table):
     merged = pd.merge(candidates, address_table, on='address')
-    merged = merged.drop(columns=['city_x', 'address', 'postcode_x', 'city_y', 'postcode_y', 'date_y'])
+    merged = merged.drop(columns=['city_x', 'address', 'postcode_x', 'city_y', 'postcode_y', 'date_y', 'weaknesses', 'strengths'])
     merged = merged.rename(columns={"date_x": "date"})
     return merged
 
