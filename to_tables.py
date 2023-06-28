@@ -1,8 +1,5 @@
-from file_extraction import * # take this out
-from to_dataframe import * # take this out
 from clean_dfs import *
 import pandas as pd
-from IPython.display import display
 
 
 def get_person_ids(applicants):
@@ -48,7 +45,9 @@ def generate_address_df(df):
 
 def address_id_in_candidates(candidates, address_table):
     merged = pd.merge(candidates, address_table, on='address')
-    merged = merged.drop(columns=['city_x', 'address', 'postcode_x', 'city_y', 'postcode_y', 'date_y', 'weaknesses', 'strengths'])
+    merged = merged.drop(
+        columns=['city_x', 'address', 'postcode_x', 'city_y', 'postcode_y', 'date_y', 'weaknesses', 'strengths',
+                 'tech_self_score'])
     merged = merged.rename(columns={"date_x": "date"})
     return merged
 
@@ -327,18 +326,4 @@ def transform_to_tables(dataframes: dict, academy_csvs_file_names: list) -> (lis
     tables.append(academy_results)
     table_names.append('academy_results')
 
-    print(table_names)
-    for table in tables:
-        display(table)
-
     return tables, table_names
-
-
-def main():
-    files_dict, academy_csvs_file_names = extract()
-    dataframes = convert(files_dict, academy_csvs_file_names)
-    transform_to_tables(dataframes, academy_csvs_file_names)
-    return
-
-
-main()
