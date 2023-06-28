@@ -14,7 +14,7 @@ def all_df_to_db(df_list: [], table_names: [], database_name: str):
 
 def create_database():
     # Create a SQLite connection
-    conn = sqlite3.connect('my_database.db')
+    conn = sqlite3.connect('sparta_global_data228.db')
     c = conn.cursor()
 
     # Enable foreign key constraint
