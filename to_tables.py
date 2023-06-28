@@ -189,7 +189,6 @@ def generate_trainers_table(df):
     trainers = trainer_course.set_index('trainer_id')
     trainers_table = trainers.drop(['course', 'date'], axis=1).drop_duplicates()
     trainers = trainers.rename(columns={"course": "course_name"})
-    trainers['trainer_id'] = trainers.index
     return trainers, trainers_table
 
 
