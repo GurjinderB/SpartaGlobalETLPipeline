@@ -31,10 +31,10 @@ Then install the project dependencies with
 
 Update the AWS credentials in the etl_pipeline.py file:
 
-Replace 'YOUR_AWS_ACCESS_KEY_ID' with your AWS access key ID.
-Replace 'YOUR_AWS_SECRET_ACCESS_KEY' with your AWS secret access key.
-Replace 'YOUR_S3_BUCKET_NAME' with the name of your S3 bucket containing the input data.
-Replace 'YOUR_S3_OUTPUT_BUCKET_NAME' with the name of your S3 bucket where the transformed data will be stored.
+- Replace 'YOUR_AWS_ACCESS_KEY_ID' with your AWS access key ID.
+- Replace 'YOUR_AWS_SECRET_ACCESS_KEY' with your AWS secret access key.
+- Replace 'YOUR_S3_BUCKET_NAME' with the name of your S3 bucket containing the input data.
+- Replace 'YOUR_S3_OUTPUT_BUCKET_NAME' with the name of your S3 bucket where the transformed data will be stored.
 
 
 Additional Notes
