@@ -31,7 +31,6 @@ def academy_table():
 
     # Create the DataFrame
     course_df = pd.DataFrame(course_table, columns=['name', 'course_name', 'course_group','course_date'])
-    course_df['name'] = course_df['name'].str.capitalize()    
     
     # Return the DataFrame
     return course_df
@@ -45,7 +44,7 @@ def course_table(academy_table):
 
 
 # Need to pass only candidate_df where 'name_id' can be pulled
-def academy_table_df(candidates, git course_table=course_table(academy_table()), academy_table=academy_table()):
+def academy_table_df(candidates, course_table=course_table(academy_table()), academy_table=academy_table()):
     academy = []
 
     for index, row in candidates.iterrows():
