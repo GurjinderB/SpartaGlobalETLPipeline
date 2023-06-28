@@ -1,5 +1,6 @@
 from clean_dfs import *
 import pandas as pd
+import boto3
 
 
 def get_person_ids(applicants):
@@ -276,12 +277,12 @@ def transform_to_tables(dataframes: dict, academy_csvs_file_names: list) -> (lis
     table_names = list()
 
     # generate all the tables to put into the database and add them to a list along with a list of the table names
-    candidates = generate_candidates_df(get_person_ids(df_csv), df_json, df_txt)
+    candidates_temp = generate_candidates_df(get_person_ids(df_csv), df_json, df_txt)
     address = generate_address_df(df_csv)
     tables.append(address)
     table_names.append('address')
 
-    candidates = address_id_in_candidates(candidates, address)
+    candidates = address_id_in_candidates(candidates_temp, address)
     tables.append(candidates)
     table_names.append('candidates')
 
@@ -293,7 +294,7 @@ def transform_to_tables(dataframes: dict, academy_csvs_file_names: list) -> (lis
     tables.append(weaknesses)
     table_names.append('weaknesses')
 
-    weakness_junc = generate_weakness_junc_df(candidates, weaknesses)
+    weakness_junc = generate_weakness_junc_df(candidates_temp, weaknesses)
     tables.append(weakness_junc)
     table_names.append('weakness_junc')
 
@@ -301,7 +302,7 @@ def transform_to_tables(dataframes: dict, academy_csvs_file_names: list) -> (lis
     tables.append(strengths)
     table_names.append('strengths')
 
-    strengths_junc = generate_strengths_junc_df(candidates, strengths)
+    strengths_junc = generate_strengths_junc_df(candidates_temp, strengths)
     tables.append(strengths_junc)
     table_names.append('strengths_junc')
 
