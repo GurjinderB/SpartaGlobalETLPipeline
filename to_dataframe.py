@@ -2,7 +2,6 @@ import pandas as pd
 import os
 import json
 import boto3
-from file_extraction import *
 
 
 # converts the body of a text file object into a pandas dataframe
